@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/* style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+}
+
+.anhSP {
+  display: inline-block;
+  width: 30%;
+  margin: 15px 1.5%;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.anhSP img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.anhSP h3 {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
