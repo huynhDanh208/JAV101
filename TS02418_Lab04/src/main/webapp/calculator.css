@@ -1,0 +1,84 @@
+/* ==== Calculator Styles ==== */
+
+:root {
+    --primary: #0f62fe;
+    --background: #f4f7fa;
+    --card: #ffffff;
+    --border: #dce3ed;
+    --radius: 10px;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+    font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--background);
+    color: var(--text);
+}
+
+/* Form Box */
+#calcForm {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 24px;
+    background: var(--card);
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    text-align: center;
+}
+
+#calcForm input {
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 16px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+#calcForm input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(15, 98, 254, 0.15);
+}
+
+#calcForm button {
+    width: 70px;
+    padding: 10px 0;
+    margin: 6px;
+    font-size: 20px;
+    border-radius: var(--radius);
+    border: none;
+    background: var(--primary);
+    color: white;
+    cursor: pointer;
+    transition: 0.15s ease;
+}
+
+#calcForm button:hover {
+    opacity: 0.9;
+}
+
+#calcForm button:active {
+    transform: translateY(1px);
+}
+
+/* Result + Error */
+h3 {
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    color: #16a34a;
+}
+
+.error {
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    color: red;
+    font-weight: 600;
+}
