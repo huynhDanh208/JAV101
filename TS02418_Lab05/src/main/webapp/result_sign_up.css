@@ -1,0 +1,114 @@
+/* =============================
+   PROFILE RESULT CARD STYLES
+   ============================= */
+
+:root {
+    --bg: #f4f7fa;
+    --card-bg: #ffffff;
+    --primary: #2563eb;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --radius: 14px;
+    --shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+    font-family: "Inter", system-ui, sans-serif;
+}
+
+/* Background */
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+}
+
+/* Wrapper center */
+.result-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Card */
+.result-card {
+    background: var(--card-bg);
+    padding: 32px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid #e5e7eb;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Title */
+.result-card h2 {
+    margin-top: 0;
+    text-align: center;
+    color: var(--primary);
+    font-size: 1.8rem;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+/* Rows */
+.row {
+    display: flex;
+    margin-bottom: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eef1f5;
+}
+
+.row .label {
+    width: 180px;
+    font-weight: 600;
+    color: var(--muted);
+}
+
+.row .value {
+    color: var(--text);
+    font-weight: 500;
+}
+
+/* Hobby list styling */
+.row ul {
+    padding-left: 18px;
+    margin: 0;
+}
+
+.row li {
+    margin-bottom: 4px;
+}
+
+/* Avatar section */
+.avatar-box {
+    margin-top: 26px;
+    text-align: center;
+}
+
+.avatar-box p {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--muted);
+}
+
+.avatar-box img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+    .row .label {
+        width: 100%;
+        margin-bottom: 4px;
+    }
+}
